@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Situación en Chile</title>
+    <style>
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body onload="myFunction()">
+
+    <!-- barra de navegacion de la pagina. -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Covid19</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-none" href="#" data-toggle="modal" data-target="#login-modal" id="btnLogin">Iniciar sesión</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./situacionChile.html" id="btnSituacion">Situacion Chile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" id="btnCerrar">Cerrar sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!-- seccion donde se oculta el grafico y luego de 9 segundos aparecera con una animacion. -->
+    <!-- existe un problema al renderizar el grafico, si se carga antes de que se active la clase "animate-bottom" el grafico no se imprime al 100% del ancho del div. -->
+    <!-- asi que quitare la clase y solo dejare el efecto de la rueda cargando. -->
+    <section style="display:none;" id="myDiv">
+        <div class="container mt-5">
+            <div class="row">
+                <div id="contenedorGraficoChile" style="height: 500px; width: 100%;">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- seccion en donde se carga el evento de la rueda cargando. -->
+    <section>
+        <div id="loader">
+        
+        </div>
+    </section>
+    
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+    <!-- codigo de como crear un loader sacado de w3schools.com  -->
+    <script src="./assets/js/cargando.js"></script>
+
+    <script src="./assets/js/situacionChile.js"></script>
+    <script src="./assets/js/cerrarSesion.js"></script>
+    
+
+    
+</body>
+</html>
