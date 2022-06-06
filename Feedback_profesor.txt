@@ -1,0 +1,29 @@
+Feedback Hito 2 - Situación de Chile
+
+Buen trabajo, se cumple con todos los requerimientos.
+
+Requerimientos:
+
+Estructura la página web con HTML.
+
+    puntaje obtenido: 1.5
+
+Crear rutinas que permitan consumir una API entregada, utilizando la librería jQuery o el lenguaje JavaScript.
+
+    puntaje obtenido: 3
+
+Implementar instrucciones para obtener y manipular información del DOM acorde al lenguaje JavaScript o la librería jQuery.
+
+    puntaje obtenido: 5
+
+Emplear métodos para mostrar información en el DOM acorde al lenguaje JavaScript o la librería jQuery.
+
+    puntaje obtenido: 5
+
+Emplear Formularios y Eventos que permitan obtener el JWT de una API REST acorde al lenguaje Javascript o la librería jQuery.
+
+    puntaje obtenido: 3.5
+
+Utilizar el JWT para desbloquear y consumir información de la API REST acorde al lenguaje Javascript o la librería jQuery.
+
+    puntaje obtenido: 2
